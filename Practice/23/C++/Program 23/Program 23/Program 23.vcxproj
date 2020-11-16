@@ -140,10 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Program 23.cpp" />
-    <ClCompile Include="Task2.cpp" />
-    <ClCompile Include="Task1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Task3.h" />
     <ClInclude Include="Task2.h" />
     <ClInclude Include="Task1.h" />
   </ItemGroup>
