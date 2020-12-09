@@ -1,3 +1,0 @@
-﻿  Program.cpp
-C:\Users\User\source\repos\Program\Program\Program.cpp(19,20): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-  Program.vcxproj -> C:\Users\User\source\repos\Program\Debug\Program.exe

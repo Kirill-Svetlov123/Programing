@@ -1,8 +1,0 @@
-﻿  Program 25.cpp
-C:\Users\User\source\repos\Program 25\Program 25\Program 25.cpp(10,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Program 25\Program 25\Program 25.cpp(30,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Program 25\Program 25\Program 25.cpp(39,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Program 25\Program 25\Program 25.cpp(52,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\User\source\repos\Program 25\Program 25\Program 25.cpp(63,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Program 25\Program 25\Program 25.cpp(65,27): warning C4018: <: несоответствие типов со знаком и без знака
-  Program 25.vcxproj -> C:\Users\User\source\repos\Program 25\Debug\Program 25.exe

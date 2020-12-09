@@ -1,3 +1,0 @@
-﻿  Program 15.cpp
-C:\Users\User\source\repos\Program 15\Program 15\Program 15.cpp(9,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Program 15.vcxproj -> C:\Users\User\source\repos\Program 15\Debug\Program 15.exe
