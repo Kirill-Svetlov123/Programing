@@ -4,6 +4,15 @@
 
 using namespace std;
 
+int verification(int f, int i) {
+    if (f % i != 0 && f != 1) {
+        while (f % i != 0) {
+            i++;
+        }
+    }
+    return i;
+}
+
 int funct(int n, int i, bool order) {
     int k = 0;
     while (n % i == 0) {
@@ -29,21 +38,13 @@ void print_factorization(int n) {
     factor.resize(0);
     int f = n;
     int i = 2;
-    if (f % i != 0 && f != 1) {
-        while (f % i != 0) {
-            i++;
-        }
-    }
+    i = verification(f, i);
     while (f % i == 0) {
         power[i] = funct(f, i, false);
         f = funct(f, i, true);
         factor.push_back(i);
         i++;
-        if (f % i != 0 && f != 1) {
-            while (f % i != 0) {
-                i++;
-            }
-        }
+        i = verification(f, i);
     }
     
     for (int r = 0; r < factor.size(); r++) {
@@ -62,6 +63,7 @@ void print_factorization(int n) {
 int main()
 {
     int n;
+    cout << "Введите число n: ";
     cin >> n;
 
     print_factorization(n);
