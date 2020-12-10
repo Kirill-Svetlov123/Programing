@@ -33,14 +33,15 @@ int funct(int n, int i, bool order) {
 }
 
 void print_factorization(int n) {
-    vector <int> power(n+1);
+    vector <int> power;
+    power.resize(0);
     vector <int> factor;
     factor.resize(0);
     int f = n;
     int i = 2;
     i = verification(f, i);
     while (f % i == 0) {
-        power[i] = funct(f, i, false);
+        power.push_back(funct(f, i, false));
         f = funct(f, i, true);
         factor.push_back(i);
         i++;
@@ -54,14 +55,15 @@ void print_factorization(int n) {
         else {
             cout << factor[r];
         }
-        if (power[factor[r]] > 0) {
-            cout << "^" << power[factor[r]];
+        if (power[r] > 0) {
+            cout << "^" << power[r];
         }
     }
 }
 
 int main()
 {
+    setlocale(LC_ALL, "rus");
     int n;
     cout << "Введите число n: ";
     cin >> n;

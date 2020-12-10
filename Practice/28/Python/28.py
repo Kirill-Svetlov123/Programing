@@ -18,13 +18,13 @@ def funct(n, i, order):
 			return k
 
 def print_factorization(n):
-	power = [0]*(n+1)
+	power = []
 	factor = []
 	f = n
 	i = 2
 	i = verification(f, i)
 	while (f % i == 0):
-		power[i] = funct(f, i, False)
+		power.append(funct(f, i, False))
 		f = funct(f, i, True)
 		factor.append(i)
 		i+=1
@@ -34,8 +34,8 @@ def print_factorization(n):
 			print(' *',factor[j], end='')
 		else:
 			print(factor[j], end='')
-		if (power[factor[j]] > 0):
-			print(' ^',power[factor[j]], end='') 
+		if (power[j] > 0):
+			print(' ^',power[j], end='') 
 
 
 n = int(input('Введите число n: '))
