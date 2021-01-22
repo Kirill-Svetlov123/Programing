@@ -4,6 +4,8 @@ Symbols = 257*[0]
 
 AllSymbols = 0
 
+Probability = 1
+
 for i in range(len(Words)):
 	AllSymbols += len(Words[i])
 
@@ -15,4 +17,8 @@ for i in range(len(Words)):
 StopWord = input()
 
 for i in range(len(StopWord)):
-	if (ord(StopWord[i]) == Symbols)
+	for j in range(257):
+		if (j == ord(StopWord[i])):
+			Probability *= (Symbols[j]/AllSymbols)
+
+print(Probability)
