@@ -1,9 +1,9 @@
-while True:
-	try:
-		print("Введите выражение:")
-		print(eval(input()))
-		break;
-	except ZeroDivisionError:
-		print('Делить на "0" нельзя')
-	except Exception:
-		print("Ошибка!")
+a, b, c = input('Введите выражение: ').split()
+if b == '+':
+	print(float(a) + float(c))
+if b == '-':
+	print(float(a) - float(c))
+if b == '*':
+	print(float(a) * float(c))
+if b == '/':
+	print(float(a) / float(c))
